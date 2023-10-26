@@ -7,36 +7,36 @@ Functions
 Database commands:
 1. CREATE  
 Description: Creates a new table with N columns (where N > 0). Each column contains data of type <coltype> and is accessed with the name <colname>. Table names and column names are guaranteed to be space-free. No two columns in the same table will have the same name (you do not need to check). Valid data types for coltype are {double, int, bool, string}. This table is initially empty.  
-Syntax: CREATE <tablename> <N> <coltype1> <coltype2> ... <coltypeN> <colname1> <colname2> ... <colnameN>  
+Syntax: ```CREATE <tablename> <N> <coltype1> <coltype2> ... <coltypeN> <colname1> <colname2> ... <colnameN>```  
 2. QUIT  
 Description: Clears up allocated memory.  
 3. REMOVE  
 Description: Remove existing table from the database, deleting all data in the table and its definition.
-
+Syntax: ```REMOVE <tablename>```  
 Table commands:
 1. INSERT  
 Description: Adds a new row of data to a specified table.
 Syntax:  
-INSERT INTO <tablename> <N> ROWS  
+```INSERT INTO <tablename> <N> ROWS  
 <value11> <value12> ... <value1M>  
 <value21> <value22> ... <value2M>  
 ...  
-<valueN1> <valueN2> ... <valueNM>
+<valueN1> <valueN2> ... <valueNM>```  
 2. PRINT  
 Description: Displays the content of a specified table. Can choose to print specified rows using WHERE or the entire table using ALL  
-Syntax: PRINT FROM <tablename> <N> <print_colname1> <print_colname2> ... <print_colnameN> {WHERE <colname> <OP> <value> | ALL}  
+Syntax: ```PRINT FROM <tablename> <N> <print_colname1> <print_colname2> ... <print_colnameN> {WHERE <colname> <OP> <value> | ALL}```  
 3. DELETE
 Description: Delete selected rows from the specified table.  
-Syntax: DELETE FROM <tablename> WHERE <colname> <OP> <value>  
+Syntax: ```DELETE FROM <tablename> WHERE <colname> <OP> <value>```  
 4. JOIN  
 Description: Join two tables where values in selected columns match, and print results.  
-Syntax: JOIN <tablename1> AND <tablename2> WHERE <colname1> = <colname2> AND PRINT <N> <print_colname1> <1|2> <print_colname2> <1|2> ... <print_colnameN> <1|2>
+Syntax: ```JOIN <tablename1> AND <tablename2> WHERE <colname1> = <colname2> AND PRINT <N> <print_colname1> <1|2> <print_colname2> <1|2> ... <print_colnameN> <1|2>```  
 9. GENERATE  
 Description: Directs the program to create an index of the type <indextype> on the column <colname> in the table <tablename>, where <indextype> is strictly limited to the set {hash, bst}, denoting a hash table index and a binary search tree index respectively. 
-Syntax: GENERATE FOR <tablename> <indextype> INDEX ON <colname> 
+Syntax: ```GENERATE FOR <tablename> <indextype> INDEX ON <colname>```   
 
 Getting Started  
-To use these functions, navigate to the directory where the files are contained. To generate an executable, run "make silly". Then to run it type "./silly.exe"
+To use these functions, navigate to the directory where the files are contained. To generate an executable, run ```make silly```. Then to run it type ```./silly.exe```  
 
 ⚠️ WARNING ⚠️
 
