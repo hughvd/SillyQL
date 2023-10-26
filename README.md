@@ -3,7 +3,7 @@ A relational database language created entirely from scratch, coded in C++.
 
 This project provides a set of functions that mimic some of the basic operations of SQL. These are ideal for those looking to understand the underlying mechanics of database operations without diving deep into a full-fledged SQL environment. Use of this project is to be done through the command line.
 
-Functions  
+## **Functions**  
 Database commands:
 1. CREATE  
 Description: Creates a new table with N columns (where N > 0). Each column contains data of type <coltype> and is accessed with the name <colname>. Table names and column names are guaranteed to be space-free. No two columns in the same table will have the same name (you do not need to check). Valid data types for coltype are {double, int, bool, string}. This table is initially empty.  
