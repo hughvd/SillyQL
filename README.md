@@ -11,7 +11,7 @@ Syntax: ```CREATE <tablename> <N> <coltype1> <coltype2> ... <coltypeN> <colname1
 2. QUIT  
 Description: Clears up allocated memory.  
 3. REMOVE  
-Description: Remove existing table from the database, deleting all data in the table and its definition.
+Description: Remove existing table from the database, deleting all data in the table and its definition.  
 Syntax: ```REMOVE <tablename>```  
 Table commands:
 1. INSERT  
