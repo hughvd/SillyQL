@@ -15,20 +15,22 @@ Description: Remove existing table from the database, deleting all data in the t
 Syntax: ```REMOVE <tablename>```  
 Table commands:
 1. INSERT  
-Description: Adds a new row of data to a specified table.
+Description: Adds a new row of data to a specified table.   
 Syntax:  
-```INSERT INTO <tablename> <N> ROWS  
+```
+INSERT INTO <tablename> <N> ROWS  
 <value11> <value12> ... <value1M>  
 <value21> <value22> ... <value2M>  
 ...  
-<valueN1> <valueN2> ... <valueNM>```  
-2. PRINT  
+<valueN1> <valueN2> ... <valueNM>
+```  
+3. PRINT  
 Description: Displays the content of a specified table. Can choose to print specified rows using WHERE or the entire table using ALL  
 Syntax: ```PRINT FROM <tablename> <N> <print_colname1> <print_colname2> ... <print_colnameN> {WHERE <colname> <OP> <value> | ALL}```  
-3. DELETE
+4. DELETE
 Description: Delete selected rows from the specified table.  
 Syntax: ```DELETE FROM <tablename> WHERE <colname> <OP> <value>```  
-4. JOIN  
+5. JOIN  
 Description: Join two tables where values in selected columns match, and print results.  
 Syntax: ```JOIN <tablename1> AND <tablename2> WHERE <colname1> = <colname2> AND PRINT <N> <print_colname1> <1|2> <print_colname2> <1|2> ... <print_colnameN> <1|2>```  
 9. GENERATE  
