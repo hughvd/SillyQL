@@ -41,7 +41,7 @@ Syntax: ```GENERATE FOR <tablename> <indextype> INDEX ON <colname>```
 Getting Started  
 To use these functions, navigate to the directory where the files are contained. To generate an executable, run ```make silly```. Then to run it type ```./silly.exe```  
 
-⚠️ WARNING ⚠️
+## ⚠️ WARNING ⚠️
 
 This project is from the EECS 281 course at the University of Michigan and is uploaded for educational and presentation purposes only.
 
